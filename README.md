@@ -15,34 +15,27 @@ iOSのアクティビティインジケーターを制御する「DCActivityIndi
 
 ###アクティビティインジケーターのアニメーション再生
 
-{% codeblock lang:objc %}
 [DCActivityIndicator start:self.view
                     center:self.view.center
                    styleId:GRAY
           hidesWhenStopped:YES
                showOverlay:YES];
-{% endcodeblock %}
 
 ###アクティビティインジケーターのアニメーション停止
 
-{% codeblock lang:objc %}
 [DCActivityIndicator stop];
-{% endcodeblock %}
 
 ###アクティビティインジケーターのアニメーション再生状況取得
 
-{% codeblock lang:objc %}
 if ([DCActivityIndicator isAnimating]) {
     //アニメーション再生中の処理
     
 }
-{% endcodeblock %}
 
 ##ソースコード
 
 ###DCActivityIndicator.h
 
-{% codeblock lang:objc %}
 #import <UIKit/UIKit.h>
 
 #define INDICATOR_LARGE_SIZE 50
@@ -56,11 +49,9 @@ if ([DCActivityIndicator isAnimating]) {
 + (BOOL)isAnimating;
 
 @end
-{% endcodeblock %}
 
 ###DCActivityIndicator.m
 
-{% codeblock lang:objc %}
 #import "DCActivityIndicator.h"
 
 @implementation DCActivityIndicator
@@ -151,4 +142,3 @@ typedef NS_ENUM(NSUInteger, styles) {
 }
 
 @end
-{% endcodeblock %}
