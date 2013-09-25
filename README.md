@@ -10,24 +10,3 @@ iOSのアクティビティインジケーターを制御する「DCActivityIndi
 ##ダウンロード
 
 - <https://github.com/masakihirokawa/objc-classes-dc-activity-indicator2>
-
-##使用方法
-
-###アクティビティインジケーターのアニメーション再生
-
-[DCActivityIndicator start:self.view
-                    center:self.view.center
-                   styleId:GRAY
-          hidesWhenStopped:YES
-               showOverlay:YES];
-
-###アクティビティインジケーターのアニメーション停止
-
-[DCActivityIndicator stop];
-
-###アクティビティインジケーターのアニメーション再生状況取得
-
-if ([DCActivityIndicator isAnimating]) {
-    //アニメーション再生中の処理
-    
-}
